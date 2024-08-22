@@ -1,0 +1,43 @@
+/* mathan banner start */
+.mathan_banner {
+    background-image: url('assets/img/twitter.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 120px;
+  }
+  
+  @media only screen and (max-width: 1068px) {
+    .mathan_banner {
+        /* Adjust styles for smaller screens */
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .mathan_banner {
+        /* Adjust styles for smaller screens */
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .mathan_banner {
+        /* Adjust styles for smaller screens */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .mathan_banner {
+        /* Adjust styles for smaller screens */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  }
+  /* mathan banner end */

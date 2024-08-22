@@ -1,0 +1,24 @@
+/*==========================================================================
+Counter
+========================================================================== */
+.solution__area {
+    position: relative;
+    &-left {
+        position: absolute;
+        background-position: center left;
+        background-size: cover;
+        background-repeat: repeat;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 47%;
+        height: 100%;
+    }
+}
+@media (max-width: 991px) {
+	.solution__area {
+		&-left {
+            display: none;
+		}
+	}
+}

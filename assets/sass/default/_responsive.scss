@@ -1,0 +1,44 @@
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+@media (min-width: 1200px) {
+	.header__areaa {
+		max-width: 1900px;
+	}
+}
+@media (max-width: 1450px) {
+	.header__menu {
+		background: $white;
+		padding: 0 70px;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: $primary-color;
+			width: 25%;
+			border-left: 95px solid $white ;
+			border-top: 110px solid transparent;   
+		}
+	}
+		
+}
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
+@media (max-width: 427px) {
+
+}

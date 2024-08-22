@@ -1,0 +1,229 @@
+.footer-holder {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+    background-color: #09090a;
+}
+
+.footer-holder-3 {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+    background-color: #09090a;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 20px;
+    /* border: 1px solid white; */
+}
+
+.footer-item-title h4 {
+    color: #ffffff;
+}
+
+.footer-card {
+    display: flex;
+}
+
+.footer-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.footer-icon-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-icon-2 p{
+    padding: 0px 0px 0px 0px;
+    font-size: 18pt;
+}
+
+.footer-icon-2 img{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.footer-holder-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #09090a;
+    padding: 10px;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    .footer-holder {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        justify-content: space-evenly;
+        /* border: 1px solid white; */
+        background-color: #09090a;
+    }
+
+    .footer-holder-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #09090a;
+        padding: 10px;
+    }
+
+    .footer-item-title h4 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer-card {
+        text-align: center;
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1027px) {
+    .footer-holder {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        /* border: 1px solid white; */
+        background-color: #09090a;
+
+        padding: 0vw 20vw 0vw 20vw;
+    }
+
+    .footer-holder-2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #09090a;
+        padding: 10px;
+    }
+
+    .footer-item-title h4 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer-card {
+        text-align: center;
+    }
+
+    .footer-icon-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-icon-2 p{
+    padding: 0px 0px 0px 0px;
+    font-size: 18pt;
+}
+
+.footer-holder-2 {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: normal;
+    /* border: 1px solid white; */
+    background-color: #09090a;
+}
+
+.hidden-image {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-p{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+}
+
+/* other */
+@media screen and (min-width: 1027px) and (max-width: 1645px) {
+    .footer-holder {
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        /* border: 1px solid white; */
+        background-color: #09090a;
+        flex-wrap: wrap;
+    }
+
+    .footer-holder-2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #09090a;
+        padding: 10px;
+    }
+
+    .footer-item-title h4 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .footer-card {
+        text-align: center;
+    }
+
+    .footer-icon-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .footer-icon-2 p{
+        padding: 0px 0px 0px 0px;
+        font-size: 18pt;
+    }
+    
+    .footer-holder-2 {
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: normal;
+        /* border: 1px solid white; */
+        background-color: #09090a;
+    }
+    
+    .hidden-image {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .hidden-p{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .column-4{
+        flex: 1;
+        width: 100%;
+        align-self: center;
+    }
+}

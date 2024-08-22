@@ -1,0 +1,168 @@
+/*==========================================================================
+Business
+========================================================================== */
+.business__area{
+    &-right {
+		position: relative;
+        &-image {
+            img {
+                max-width: 450px;
+            }
+            &-2 {
+                position: absolute;
+                bottom: 30px;
+                left: 50px;
+                max-width: 280px;
+                border: 10px solid $white;
+            }
+        }
+        &-shape {
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            max-width: 250px;
+            z-index: -1;
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.business__area {
+		&-right {
+			&-image {
+				img {
+					max-width: 350px;
+				}
+			}
+			&-shape {
+				max-width: 200px;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	.business__area {
+		&-left {
+			padding-right: 0;
+		}
+		&-right {
+			&-image {
+				img {
+					max-width: 450px;
+				}
+				&-2 {
+					max-width: 350px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.business__area {
+		&-right {
+			&-image {
+				img {
+					max-width: 340px;
+				}
+				&-2 {
+					max-width: 280px;
+				}
+			}
+			&-shape {
+				max-width: 190px;
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.business__area {
+		&-right {
+			&-image {
+				img {
+					max-width: 340px;
+				}
+				&-2 {
+					max-width: 280px;
+				}
+			}
+			&-shape {
+				max-width: 190px;
+			}
+		}
+	}
+}
+@media (max-width: 490px) {
+	.business__area {
+		&-right {
+			&-image {
+				img {
+					max-width: 290px;
+				}
+				&-2 {
+					max-width: 230px;
+					left: 30px;
+				}
+			}
+			&-shape {
+				max-width: 130px;
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.business__area {
+		&-right {
+			&-image {
+				img {
+					max-width: 250px;
+				}
+				&-2 {
+					max-width: 170px;
+					left: 30px;
+				}
+			}
+			&-shape {
+				max-width: 130px;
+			}
+		}
+	}
+}
+.progress-content h4 {
+	display: inline-block;
+	padding-left: 10px;
+}
+svg.circle-progress {
+	height: auto;
+	transform: rotate(0deg);
+	width: 100%;
+}
+svg.circle-progress circle {
+	fill: rgba(0, 0, 0, 0);
+	stroke-dashoffset: 219.9114857513;
+	stroke-width: 5px;
+}
+svg.circle-progress circle.incomplete {
+	stroke: $thin-bg;
+}
+svg.circle-progress circle.complete {
+	stroke-dasharray: 219.9114857513;
+	stroke: $primary-color;
+}
+svg.circle-progress text {
+	fill: $secondary-color;
+	text-anchor: middle;
+}
+.beorx-progress {
+	position: relative;
+	min-width: 120px;
+	width: 120px;
+}
+.beorx-progress .counter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: $secondary-color;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: $dm;
+}

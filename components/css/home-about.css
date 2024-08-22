@@ -1,0 +1,169 @@
+.about-container {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 60px 60px;
+    /* border: black solid 1px; */
+}
+
+.mission-vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 20px 0px 20px 0px
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(25,69,75);
+    box-shadow: 21px 21px 0px -2px rgba(24, 68, 74);
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 60px;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30vw;
+    height: 15vw;
+    background-color: rgb(255, 255, 255, 1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card-holder:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 21px 24px 10px -2px rgba(24,68,64);
+}
+
+.card-holder p {
+    text-align: left;
+    text-transform: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14pt;
+}
+
+.card-holder h2 {
+    text-align: center;
+}
+
+.card-holder span {
+    text-align: center;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 0px 0px 20px 0px
+}
+
+.about-card p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    text-transform: none;
+    font-size: 14pt;
+}
+
+.about-card h2 {
+    text-align: center;
+}
+
+/* team h4- title */
+.team-font-size h4{
+    font-size: 16pt;
+}
+
+/* Media query for small devices like phones */
+@media (max-width: 600px) {
+
+    .about-container,
+    .mission-vision,
+    .card-holder {
+        flex-direction: column;
+    }
+
+    .card-holder {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 5vw;
+        height: auto;
+        box-shadow: 10px 10px 0px -2px rgba(24, 68, 74);
+    }
+
+    .card-holder:hover {
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 11px 14px 10px -2px rgba(24,68,64);
+    }
+
+    .about-card {
+        width: 100vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .about-card p {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* for ipad */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .about-container,
+    .mission-vision,
+    .card-holder {
+        flex-direction: column;
+    }
+
+    .card-holder {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 3vw;
+        height: auto;
+    }
+
+    .about-card {
+        width: 100vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .about-card p {
+        text-align: left;
+    }
+
+    .p-card{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  @media screen and (min-width: 1027px) and (max-width: 1750px) {
+    .about-container,
+    .mission-vision,
+    .card-holder {
+        flex-direction: column;
+    }
+
+    .mission-vision {
+        width: 80%;
+    }
+
+    .card-holder{
+        width: 90%;
+        height: auto;
+    }
+}

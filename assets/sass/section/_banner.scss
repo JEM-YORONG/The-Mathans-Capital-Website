@@ -1,0 +1,88 @@
+/*==========================================================================
+Banner 
+========================================================================== */
+.banner__area {
+	background-color: $secondary-color;
+	position: relative;
+    &-content {
+        padding: 200px 0px;
+        max-width: 700px;
+        h1 {
+            font-size: 100px;
+            line-height: 110px;
+            color: $white;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            color: $border1;
+            margin-bottom: 25px;
+        }
+    }
+    &-left {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 50%;
+        left: 0;
+        bottom: 0;
+        top: 50px;
+    }
+    &-right {
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 100%;
+        width: 40%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+@media (max-width: 1199px) {
+	.banner__area {
+        &-right {
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px) {
+	.banner__area {
+        &-content {
+            padding: 200px 0px;
+            h1 {
+                font-size: 80px;
+                line-height: 90px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+	.banner__area {
+        &-content {
+            padding: 120px 0px;
+            h1 {
+                font-size: 58px;
+                line-height: 68px;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+	.banner__area {
+        &-content {
+            h1 {
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+    }
+}

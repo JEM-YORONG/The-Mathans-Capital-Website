@@ -1,0 +1,191 @@
+/*==========================================================================
+Marketing
+========================================================================== */
+.marketing__area {
+    &-left {
+        position: relative;
+        &-image {
+            img {
+                max-width: 420px;
+            }
+            &-2 {
+                position: absolute;
+                top: 140px;
+                right: 0;
+                max-width: 350px;
+            }
+        }
+        &-shape {
+            &-1 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                max-width: 35%;            
+            }
+            &-2 {
+                position: absolute;
+                top: 200px;
+                left: 30px;
+                z-index: -1;
+                max-width: 50%;           
+            }
+        }
+    }
+    &-right {
+        padding-left: 60px;
+        &-item {
+            &-icon {
+                display: inline-block;
+                img {
+                    max-width: 40px;
+                    transform: rotateY(0deg);
+                }
+            }
+            &:hover {
+                img {
+                    animation: rotateY 1s ease 0s;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .marketing__area {
+        padding-bottom: 32px;
+        &-left {
+            margin-bottom: 41px;
+            &-image {
+                img {
+                    max-width: 370px;
+                }
+                &-2 {
+                    max-width: 320px;
+                }
+            }
+            &-shape {
+                &-1 {
+                    top: 50px;
+                }
+            }
+        }
+        &-right {
+            padding-left: 30px;
+            &-item {
+                h4 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .marketing__area {
+        padding-bottom: 0;
+        &-left {
+            margin-bottom: 195px;
+            &-image {
+                img {
+                    max-width: 500px;
+                }
+                &-2 {
+                    max-width: 420px;
+                }
+            }
+            &-shape {
+                &-1 {
+                    top: 0;
+                }
+            }
+        }
+        &-right {
+            padding-left: 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .marketing__area {
+        &-left {
+            margin-bottom: 250px;
+            &-image {
+                img {
+                    max-width: 360px;
+                }
+                &-2 {
+                    max-width: 420px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .marketing__area {
+        &-left {
+            margin-bottom: 250px;
+            &-image {
+                img {
+                    max-width: 360px;
+                }
+                &-2 {
+                    max-width: 420px;
+                }
+            }
+        }
+        &-right {
+            &-item {
+                max-width: 270px;
+                h4 {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 490px) {
+    .marketing__area {
+        &-left {
+            margin-bottom: 165px;
+            &-image {
+                img {
+                    max-width: 310px;
+                }
+                &-2 {
+                    max-width: 280px;
+                    top: 100px;
+                }
+            }
+            &-shape {
+                &-2 {
+                    top: 130px;
+                }
+            }
+        }
+        &-right {
+            &-item {
+                max-width: 270px;
+                h4 {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 390px) {
+    .marketing__area {
+        &-left {
+            margin-bottom: 130px;
+            &-image {
+                img {
+                    max-width: 250px;
+                }
+                &-2 {
+                    top: 90px;
+                    max-width: 205px;
+                }
+            }
+        }
+    }
+}

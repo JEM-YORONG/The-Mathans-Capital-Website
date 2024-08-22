@@ -1,0 +1,812 @@
+
+.secContainer{
+    /* border: 1px solid red; */
+    padding: 20px 20px 20px 20px;
+}
+
+.secContainer .annContent {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contHolder {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #25545a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.contHolder:hover {
+    background-color: #1cd663;
+}
+
+.borderDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.titleDiv {
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+}
+
+.imgDiv{
+    /* border: 1px solid red; */
+    padding: 20px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgDiv img{
+    width: 1000px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.logoDiv:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 0px -2px rgba(24, 68, 74);
+}
+
+.logoDiv{
+    /* border: 1px solid red; */
+    margin: 20px 20px 20px 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(25,69,75);
+    box-shadow: 21px 21px 0px -2px rgba(24, 68, 74);
+    width: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.caroDiv {
+    width: 98%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    margin: 40px 20px 20px 20px; 
+    border-radius: 8px;
+    height: 500px;
+}
+
+.imgContent {
+    flex: 0 0 40%;
+    margin-right: 10px; 
+    
+}
+
+.imgContent:last-child {
+    margin-right: 0; 
+}
+
+.imgContent img {
+    width: 100%; 
+    height: auto;
+    background-color: #18444a;
+    border-radius: 8px;
+    padding: 5px;
+    height: 500px;
+}
+
+.imgContent img:hover {
+    background-color: #1cd663;
+}
+
+/* Responsiveness */
+
+/* smartphone Fold*/
+@media screen and (min-width: 280px){
+    
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 10px 20px 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 11px 11px 0px -2px rgba(24, 68, 74);
+        width: 100%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 92%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 400px;
+        align-self: center;
+    }
+    
+    .imgContent {
+        flex: 0 0 100%;
+        margin-right: 10px; 
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: 400px;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+    }
+}
+
+/* smartphone*/
+@media screen and (min-width: 375px){
+    
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 10px 20px 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 11px 11px 0px -2px rgba(24, 68, 74);
+        width: 100%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 92%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 400px;
+        align-self: center;
+    }
+    
+    .imgContent {
+        flex: 0 0 100%;
+        margin-right: 10px; 
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: 400px;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+    }
+}
+
+/* smartphone big screen*/
+@media screen and (min-width: 576px){
+    
+.secContainer .annContent {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contHolder {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #25545a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+}
+
+.borderDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.imgDiv{
+    /* border: 1px solid red; */
+    padding: 20px 10px 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.logoDiv{
+    /* border: 1px solid red; */
+    margin: 20px 20px 20px 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(25,69,75);
+    box-shadow: 11px 11px 0px -2px rgba(24, 68, 74);
+    width: 100%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.caroDiv {
+    width: 93%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    margin: 40px 20px 20px 20px; 
+    border-radius: 8px;
+    height: 400px;
+    align-self: center;
+}
+
+.imgContent {
+    flex: 0 0 100%;
+    margin-right: 10px; 
+}
+
+.imgContent:last-child {
+    margin-right: 0; 
+}
+
+.imgContent img {
+    width: 100%; 
+    height: 400px;
+    background-color: #18444a;
+    border-radius: 8px;
+    padding: 5px;
+}
+}
+
+/* tablet */
+@media screen and (min-width: 768px){
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 10px 20px 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 11px 11px 0px -2px rgba(24, 68, 74);
+        width: 100%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 94%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 500px;
+        align-self: center;
+    }
+    
+    .imgContent {
+        flex: 0 0 100%;
+        margin-right: 10px; 
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: 500px;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+    }
+}
+
+/* tablet big screen*/
+@media screen and (min-width: 992px){
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 10px 20px 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 11px 11px 0px -2px rgba(24, 68, 74);
+        width: 100%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 95%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 500px;
+        align-self: center;
+    }
+    
+    .imgContent {
+        flex: 0 0 100%;
+        margin-right: 10px; 
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: 500px;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1200px){
+    .secContainer{
+        /* border: 1px solid red; */
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .titleDiv {
+        /* border: 1px solid red; */
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 20px 20px 20px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 1100px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 21px 21px 0px -2px rgba(24, 68, 74);
+        width: 50%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 97%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 500px;
+    }
+    
+    .imgContent {
+        flex: 0 0 50%;
+        margin-right: 10px; 
+        
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: auto;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+        height: 500px;
+    }
+}
+
+/* desktop big screen*/
+@media screen and (min-width: 1400px){
+    .secContainer{
+        /* border: 1px solid red; */
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .secContainer .annContent {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contHolder {
+        /* border: 1px solid red; */
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #25545a;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 10px 10px 0px 2px rgb(22, 60, 66);
+    }
+    
+    .borderDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        border-radius: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .titleDiv {
+        /* border: 1px solid red; */
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .imgDiv{
+        /* border: 1px solid red; */
+        padding: 20px 20px 20px 20px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .imgDiv img{
+        width: 1100px;
+        height: 300px;
+        border-radius: 8px;
+    }
+    
+    .logoDiv{
+        /* border: 1px solid red; */
+        margin: 20px 20px 20px 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(25,69,75);
+        box-shadow: 21px 21px 0px -2px rgba(24, 68, 74);
+        width: 50%;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .caroDiv {
+        width: 97%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        -webkit-overflow-scrolling: touch;
+        margin: 40px 20px 20px 20px; 
+        border-radius: 8px;
+        height: 500px;
+    }
+    
+    .imgContent {
+        flex: 0 0 50%;
+        margin-right: 10px; 
+        
+    }
+    
+    .imgContent:last-child {
+        margin-right: 0; 
+    }
+    
+    .imgContent img {
+        width: 100%; 
+        height: auto;
+        background-color: #18444a;
+        border-radius: 8px;
+        padding: 5px;
+        height: 500px;
+    }
+}

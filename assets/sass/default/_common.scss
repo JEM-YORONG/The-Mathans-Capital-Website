@@ -1,0 +1,366 @@
+/*==========================================================================
+Pack
+========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+body {
+	font-family: $inter;
+	color: $body-color;
+	font-size: 16px;
+	line-height: 26px;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+a,
+button {
+  outline: medium none;
+  color: inherit;
+  text-decoration: none;
+}
+a,
+button,
+i {
+	text-decoration: none;
+	color: inherit;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	color: $white;
+	outline: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+i {
+	&::before {
+		position: relative;
+		top: 2px;
+	}
+}
+input,
+input:hover,
+input:focus,
+input[type=text],
+input[type=email],
+textarea,
+textarea:hover,
+textarea:focus,
+button,
+button:hover,
+button:focus {
+	box-shadow: none;
+	border: 0px;
+	outline: none;
+}
+.form-control:focus {
+	border: 0;
+	outline: 0;
+	box-shadow: none;
+}
+.section-padding {
+	padding: 120px 0px;
+}
+/*==========================================================================
+Hedging CSS
+========================================================================== */
+$list: (h1, 90px, 70px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(h2, 50px, 60px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(h3, 30px, 40px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(h4, 24px, 34px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(h5, 18px, 28px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(h6, 14px, 22px, 0, 0, $secondary-color, $dm, 400, capitalize),
+(p, 16px, 30px, 0, 0, $body-color, $inter, 400, capitalize);
+@each $name, $size, $height, $p, $m, $color, $font, $weight, $capitalize in $list {
+    #{$name}{
+        font-size: $size;
+        line-height: $height;
+        padding: $p;
+        margin: $m;
+        color: $color;
+        font-family: $font;
+        font-weight: $weight;
+		text-transform: $capitalize;
+    }
+}
+$list: left, center, right;
+@each $i in $list {
+    .t-#{$i} {
+        text-align: $i;
+    }
+}
+@media (max-width: 490px) {
+	h2 {
+	  font-size: 29px;
+	  line-height: 39px;
+	}
+}
+/*==========================================================================
+Section Top
+========================================================================== */
+.section-top {
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+	color: $primary-color;
+	text-transform: uppercase;
+	padding-right: 70px;
+	margin-bottom: 8px;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 60px;
+		height: 3px;
+		right: 0;
+		bottom: 13px;
+		background: $primary-color;
+	}
+}
+/*==========================================================================
+Theme Btn CSS
+========================================================================== */
+.theme-banner-btn,
+.theme-btn {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	color: $white;
+	height: 55px;
+	line-height: 55px;
+	padding: 0 25px;
+	font-weight: 700;
+	overflow: hidden;
+	transition: all 0.4s ease-out 0s;
+	border-radius: 3px;
+	background-color: $primary-color;
+	text-transform: uppercase;
+	z-index: 3;
+}
+.theme-banner-btn i::before,
+.theme-btn i::before {
+	font-size: 22px;
+	margin-left: 10px;
+	top: 5px;
+	position: relative;
+}
+.theme-banner-btn::before,
+.theme-btn::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: all 0.4s ease-out 0s;
+	margin: 0 auto;
+	z-index: -1;
+	background-color: $secondary-color;
+	width: 10%;
+	opacity: 0;
+}
+.theme-btn:hover {
+	color: $white;
+	&::before {
+		background: $secondary-color;		
+	}
+}
+.theme-banner-btn:hover {
+	color: $secondary-color;
+	&::before {
+		background: $white;		
+	}
+}
+.theme-banner-btn:hover::before,
+.theme-btn:hover::before {
+	width: 100%;
+	opacity: 1;
+}
+.simple-btn {
+	display: inline-block;
+	color: $secondary-color;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
+	position: relative;	
+	&::after {
+		position: absolute;
+		content: '';
+		width: 50px;
+		height: 2px;
+		background: $primary-color;
+		bottom: 0;
+		left: 0;
+		transition: all 0.3s ease-in-out;		
+	}
+	&:hover {
+		color: $primary-color;
+		&::after {
+			width: 100%;
+		}
+	}
+}
+/*==========================================================================
+Preloader CSS
+========================================================================== */
+.spinner {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin: 100px auto;
+}
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: $white;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+@keyframes sk-bounce {
+	0%, 100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	50% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+.theme-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: $secondary-color;
+	z-index: 9999999999;
+}
+.theme-loader .spinner {
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+/*==========================================================================
+Scroll Top CSS
+========================================================================== */
+.scroll-top {
+	background: $primary-color;
+	bottom: 1%;
+	color: $white;
+	font-size: 20px;
+	height: 50px;
+	line-height: 55px;
+	position: fixed;
+	right: 1%;
+	text-align: center;
+	width: 50px;
+	z-index: 9;
+	cursor: pointer;
+	display: none;	
+	border-radius: 50%;
+}
+/*==========================================================================
+Video Animation CSS
+========================================================================== */
+@keyframes animation {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes rotateY {
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes pulse-border {
+	0% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	100% {
+		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+}
+/*==========================================================================
+Animate 
+========================================================================== */
+.up-down-animate {
+	-webkit-animation-name: up-down;
+	animation-name: up-down;
+	-moz-animation-name: up-down;
+	-ms-animation-name: up-down;
+	-o-animation-name: up-down;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-ms-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+}
+@keyframes up-down {
+	0% {
+		transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		-moz-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		-o-transform: translateY(-30px);
+	}
+	50% {
+		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
+		-moz-transform: translateY(-20px);
+		-ms-transform: translateY(-20px);
+		-o-transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		-moz-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		-o-transform: translateY(-30px);
+	}
+}

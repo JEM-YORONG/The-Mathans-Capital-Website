@@ -1,0 +1,38 @@
+.services-table {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .services-table {
+        flex-direction: column;
+    }
+
+    .services-tablec {
+        padding: 30px;
+    }
+}
+
+.services-tablec {
+    width: 100%;
+    padding: 50px 240px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .services-table {
+        flex-direction: column;
+    }
+
+    .services-tablec {
+        padding: 30px;
+    }
+}
+
+.service__area_section a.theme-btn {
+    float: right;
+    text-align: flex-end;
+
+}
